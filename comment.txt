@@ -1,0 +1,16 @@
+
+composer create-project --prefer-dist laravel/laravel mdorm
+
+php artisan make:auth
+php artisan migrate
+
+To migrate specific Table
+copy the migration file to temp folder
+php artisan migrate --path=database/migrations/temp
+
+To Migrate from Ms sql to mysql
+create database with the same name of exported database and set collation
+
+--------
+composer require niklasravnsborg/laravel-pdf
+composer require barryvdh/laravel-dompdf
